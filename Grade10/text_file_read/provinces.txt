@@ -1,0 +1,9 @@
+Eastern Cape, Bhisho
+Free State, Bloemfontein
+Gauteng, Johannesburg
+KwaZulu-Natal,Pietermaritzburg
+Limpopo,Polokwane
+Mpumalanga,Mbombela
+North West,Mahikeng
+Northern Cape,Kimberley
+Western Cape, Cape Town
