@@ -1,0 +1,165 @@
+DamID,DamName,River,YearCompleted,DamLevel,Capacity,HeightOfWall
+1,Albasini Dam,Levubu River,1952,20053,28200,34.55
+2,Albert Falls Dam,Umgeni River,1976,142339,288100,33.52
+3,Allemanskraal Dam,Sand River,1960,128666,174500,38.20
+4,Alphen Dam,Bonte River,1990,237,700,18.70
+5,Armenia Dam,Leeu River,1954,7056,13000,22.60
+6,Beervlei Dam,Groot River,1957,50460,85800,31.60
+7,Berg River Dam,Berg River,2007,112394,127100,68.40
+8,Bivane Dam,Bivane River,2000,47764,115200,72.30
+9,Bloemhoek Dam,Jordaan Spruit,1976,8867,26400,28.80
+10,Bloemhof Dam,Vaal River,1970,875662,1240200,33.70
+11,BlydeRivierpoort Dam,Blyde River,1974,53441,54400,71.50
+12,Boegoeberg Dam,Orange River,1929,12121,19800,12.50
+13,Bon Accord Dam,Apies River,1925,3447,4400,18.90
+14,Bongolo Dam,Komani River,1908,3402,7015,24.10
+15,Boschmanskop No 1 Dam,Woes-Alleen River,1995,7253,14400,22.70
+16,Boskop Dam,Mooi River,1959,16950,20840,33.30
+17,Bospoort Dam,Hex River,1933,8866,15800,28.60
+18,Bridle Drift Dam,Buffels River,1969,66835,101600,55.40
+19,Bronkhorstspruit Dam,Bronkhorst Spruit,1950,47748,57400,35.10
+20,Buffeljags Dam,Buffeljags River,1967,4001,4800,24.70
+21,Buffelspoort Dam,Sterkstroom River,1934,10024,10251,34.60
+22,Ceres Koekedouw Dam,Loekedouw River,2001,11731,17200,60.80
+23,Churchill Dam,Krom River,1943,17236,35500,43.80
+24,Clanwilliam Dam,Olifants River,1935,97731,121800,43.90
+25,Craigie Burn Dam,Mnyamvubu River,1963,10817,22500,38.20
+26,Da Gama Dam,Witwaters River,1971,7901,13578,38.60
+27,Damani Dam,Mbwedi River,1991,10114,11000,28.50
+28,Dap Naude Dam,Broederstroom River,1958,1692,1900,23.80
+29,Darlington Dam,Sundays River,1922,101062,188800,48.30
+30,De Hoop Dam,Kamdeboo River,1938,11135,16500,15.60
+31,Disaneng Dam,Molopo River,1980,14676,17400,17.60
+32,Doorndraai Dam,Sterk River,1952,21093,43800,25.20
+33,Doring River Dam,Doring River,1971,19279,19690,35.20
+34,Douglas Weir,Vaal River,1977,5910,16700,10.60
+35,Driekloof Dam,Nuwejaar Spruit,1979,16759,32071,47.60
+36,Driekoppies Dam,Lomati River,1998,126366,250900,50.80
+37,Ebenezer Dam,Groot Letaba River,1959,31982,69100,61.10
+38,Egmont Dam,Witte Spruit,1937,6181,9300,25.30
+39,Eikenhof Dam,Palmiet River,1977,11000,28900,46.60
+40,Elandskloof Dam,Elands River,1976,6896,11017,69.50
+41,Emmarentia Dam,Braamfontein Spruit,1912,151,250,11.40
+42,Erfenis Dam,Groot-Vet River,1960,186380,207500,46.90
+43,Fika-Patso Dam,Namahadi River,1987,26126,28000,65.40
+44,Flag Boshielo Dam,Olifants River,1987,126647,185100,36.60
+45,Floriskraal Dam,Buffels River,1957,29439,50334,33.70
+46,Gamkapoort Dam,Gamka River,1969,28772,37213,42.80
+47,Gariep Dam,Orange River,1971,4869524,5340600,88.10
+48,Glen Alpine Dam,Magalakwena River,1968,17653,18900,28.40
+49,Goedertrouw Dam,Mhlatuze River,1982,135084,301300,88.50
+50,Grassridge Dam,Great Brak River,1924,15636,46200,24.80
+51,Greater Brandvlei Dam,Breede River,1989,323041,474046,18.50
+52,Groendal Dam,Swartkops River,1934,10105,12100,51.30
+53,Grootdraai Dam,Vaal River,1981,223881,349500,42.30
+54,Hartbeespoort Dam,Crocodile River,1925,120453,186400,59.80
+55,Hazelmere Dam,Mdloti River,1977,9358,17858,50.70
+56,Hellsgate Dam,Klip River,1910,50,120,26.10
+57,Heyshope Dam,Assegaai River,1983,402230,451300,29.10
+58,Impofu Dam,Krom River,1982,35653,105800,75.30
+59,Inanda Dam,Umgeni River,1989,173323,241700,65.50
+60,Injaka Dam,Marite River,2002,71478,123700,53.40
+61,Jericho Dam,Mpama River,1966,52453,59500,22.80
+62,Kalkfontein Dam,Riet River,1938,259338,325100,36.70
+63,Kammanassie Dam,Kammanassie River,1923,35189,35870,41.70
+64,Katrivier Dam,Kat River,1969,10954,24690,55.60
+65,Kilburn Dam,Mnjaneni River,1981,16878,35577,51.10
+66,Klerkskraal Dam,Mooi River,1965,5730,7900,15.10
+67,Klipberg Dam,Konings River,1964,1243,1996,29.40
+68,Klipdrif Dam,Loop Spruit,1918,4629,13300,12.20
+69,Klipkoppie Dam,White River,1960,5001,12256,20.20
+70,Klipvoor Dam,Pienaars River,1970,19692,47000,30.40
+71,Knellpoort Dam,Riet Spruit,1988,73252,130000,50.60
+72,Kogelberg Dam,Palmiet River,1986,17755,19000,54.90
+73,Kommandodrif Dam,Tarka River,1956,32948,58114,39.30
+74,Koppies Dam,Renoster River,1911,39163,42300,25.60
+75,Kouga Dam,Kouga River,1969,111644,125900,81.70
+76,Kromfontein Middle Cofferdam,Steenkool Spruit,1990,14359,18000,16.80
+77,Kromfontein Lower Cofferdam,Steenkool Spruit,1992,11121,13000,17.50
+78,Krugersdrift Dam,Modder River,1970,59997,66000,26.70
+79,Kwaggaskloof Dam,Wabooms River,1975,146215,173900,18.20
+80,Kwena Dam,Crocodile River,1987,118659,158900,52.50
+81,Laing Dam,Buffalo River,1951,8216,19860,45.80
+82,Lake Arthur Dam,Tarka River,1924,8502,10700,38.50
+83,Lake Mzingazi Dam,Mzingazi River,1942,19678,37000,8.20
+84,Lakenvallei Dam,Sanddrifskloof River,1974,5823,10300,56.60
+85,Leeu-Gamka Dam,Leeuw River,1958,15763,42211,21.50
+86,Lindleyspoort Dam,Elands River,1943,11710,14381,39.20
+87,Loskop Dam,Olifants River,1939,169576,361500,54.10
+88,Lubisi Dam,Indwe River,1968,123016,158000,52.10
+89,Luphephe Dam,Luphephe River,1963,7516,14000,42.90
+90,Madikwe Dam,Thulane River,1976,7829,14000,17.20
+91,Makuleke Dam,Mphongolo River,1990,11034,13000,22.40
+92,Marico-Bosveld Dam,Groot Marico River,1933,19062,27813,34.60
+93,Middelburg Dam,Klein Olifants River,1978,45475,48435,36.10
+94,Middle Letaba Dam,Middle Letaba River,1984,100825,171900,34.60
+95,Midmar Dam,Umgeni River,1965,124641,235400,32.20
+96,Misverstand Dam,Berg River,1977,3997,6400,26.80
+97,Modderpoort Dam,Rietfontein River,1953,3784,10000,15.30
+98,Mokolo Dam,Mokolo River,1980,145242,145400,57.70
+99,Molatedi Dam,Marico River,1986,97187,200800,23.80
+100,Molteno Dam,Table Mountain River,1881,99,200,15.70
+101,Morgenstond Dam,Ngwempisi River,1978,97221,100773,43.70
+102,Mtata Dam,Mtata River,1977,128835,253674,18.70
+103,Mutshedzi Dam,Mutshedzi River,1990,2269,2300,25.80
+104,Nagle Dam,Umgeni River,1950,18623,23200,46.90
+105,Nahoon Dam,Nahoon River,1966,16849,19934,44.90
+106,Nandoni Dam,Levuvuhu River,2004,147060,166100,47.40
+107,Ncora Dam,Tsomo River,1975,104133,150100,44.30
+108,Ngodwana Dam,Ngodwana River,1984,5854,10400,47.80
+109,Ngotwane Dam,Ngotwane River,1982,17736,18800,19.30
+110,Nooitgedacht Dam,Komati River,1962,42229,78400,42.20
+111,Nqweba Dam,Sundays River,1925,26241,46369,42.30
+112,Ntshingwayo Dam,Nsama River,1961,151563,194600,28.10
+113,Nwanedzi Dam,Nwanedzi River,1964,4211,5100,36.60
+114,Nzhelele Dam,Nzhelele River,1948,42077,51200,47.70
+115,Ohrigstad Dam,Ohrigstad River,1955,9012,13400,52.10
+116,Olifantsnek Dam,Hex River,1928,9324,14200,31.60
+117,Oudebaaskraal Dam,Tankwa River,1969,15708,34000,21.30
+118,Phiphidi Dam,Mutshindudi River,1971,110414,187355,16.10
+119,Pietersfontein Dam,Pietersfontein River,1968,1610,1984,33.30
+120,Pongolapoort Dam,Pongola River,1973,1196920,2267100,89.50
+121,Poortjieskloof Dam,Groot River,1955,5381,9700,38.80
+122,Qedusizi Dam,Klip River,1998,130238,133295,32.90
+123,Rhenosterkop Dam,Elands River,1984,166059,204600,36.50
+124,Rietvlei Dam,Rietvlei River,1933,7767,12300,21.20
+125,Rockview Dam,Palmiet River,1986,6280,16400,48.20
+126,Roodekoppies Dam,Crocodile River,1984,89458,103000,25.60
+127,Roodeplaat Dam,Pienaars River,1959,23617,41200,59.20
+128,Rustfontein Dam,Modder River,1955,70529,72200,36.90
+129,Sandile Dam,Keiskamma River,1983,12318,30960,61.20
+130,Setumo Dam,Molopo River,1995,15667,19600,17.30
+131,Slangdraai Dam,Sundays River,1986,4901,10300,15.90
+132,Smartt Dam,Ongers River,1912,34510,100300,28.50
+133,Sol Plaatjie Dam,Liebenbergsvlei River,1968,10963,15676,24.10
+134,Spioenkop Dam,Tugela River,1973,228369,270600,53.10
+135,Spitskop Dam,Harts River,1974,53064,57800,18.50
+136,Steenbras Dam,Steenbras River,1921,24239,33897,37.50
+137,Steenbras Dam - Upper,Steenbras River,1977,19034,32483,37.60
+138,Sterkfontein Dam,Nuwejaar Spruit,1980,2156267,2616900,93.40
+139,Stettynskloof Dam,Holsloot River,1955,11641,14700,48.60
+140,Stompdrift Dam,Olifants River,1965,43925,55300,49.20
+141,Taung Dam,Harts River,1993,57645,58900,44.60
+142,Theewaterskloof Dam,Riviersonderend River,1978,299015,480200,38.40
+143,Trichardtsfontein Dam,Trichardt Spruit,1981,13848,15200,26.80
+144,Tsojana Dam,Tsojana River,1978,11238,12340,23.70
+145,Tweedraai Dam,Trichardt Spruit,1991,11161,16000,21.50
+146,Vaal Barrage,Vaal River,1922,48897,56712,10.30
+147,Vaal Dam,Vaal River,1939,2036835,2603400,63.40
+148,Vaalharts Storage Weir,Vaal River,1936,24105,48700,12.50
+149,Vanderkloof Dam,Orange River,1977,1919675,3171300,108.30
+150,Vanwyksvlei Dam,Vanwyksvlei,1884,140112,143081,15.20
+151,Vondo Dam,Mutshindudi River,1982,12186,30540,47.30
+152,Voëlvlei Dam,Voëlvlei River,1971,131302,158600,10.60
+153,Wagendrift Dam,Bushmans River,1963,27028,55900,41.50
+154,Waterdown Dam,Klipplaat River,1958,15467,38400,44.70
+155,Welbedacht Dam,Caledon River,1973,4708,10200,32.20
+156,Wemmershoek Dam,Wemmers River,1957,34470,58700,53.50
+157,Westoe Dam,Usutu River,1968,54116,61900,26.60
+158,Witbank Dam,Olifants River,1971,70246,104000,44.30
+159,Witklip Dam,Sand River,1969,11446,12970,21.90
+160,Wolwedans Dam,Great Brak River,1990,13636,25530,70.30
+161,Woodstock Dam,Tugela River,1983,322366,373300,49.30
+162,Wriggleswade Dam,Kubusi River,1991,34578,93200,35.40
+163,Xonxa Dam,White Kei River,1974,95440,115900,49.60
+164,Zaaihoek Dam,Slang River,1988,75296,184600,46.50

@@ -1,0 +1,29 @@
+unit dbConnection;
+
+interface
+
+uses
+  Forms, SysUtils,Classes,DB,ADODB,StdCtrls,DBGrids,DBCtrls,Windows;
+
+type
+  TConnection = class(TObject)
+
+  public
+    dbConnection : TADOConnection;
+
+    procedure dbConnect;
+
+  end;
+
+var
+  MyForm : Tform;
+
+implementation
+
+uses
+  Controls, Dialogs;
+
+const
+  DBFileName : String = 'CarRent.mdb';
+
+end.

@@ -1,0 +1,202 @@
+object frmCarRent: TfrmCarRent
+  Left = 0
+  Top = 0
+  Caption = 'Car Rent'
+  ClientHeight = 569
+  ClientWidth = 1242
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnClose = FormClose
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object PageControl1: TPageControl
+    Left = 513
+    Top = 8
+    Width = 721
+    Height = 553
+    ActivePage = TabSheet1
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Database Tables'
+      object dbgRentals: TDBGrid
+        Left = 13
+        Top = 19
+        Width = 676
+        Height = 153
+        TabOrder = 0
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object dbgVehicles: TDBGrid
+        Left = 13
+        Top = 186
+        Width = 676
+        Height = 153
+        TabOrder = 1
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+      object dbgRates: TDBGrid
+        Left = 13
+        Top = 353
+        Width = 676
+        Height = 153
+        TabOrder = 2
+        TitleFont.Charset = DEFAULT_CHARSET
+        TitleFont.Color = clWindowText
+        TitleFont.Height = -11
+        TitleFont.Name = 'Tahoma'
+        TitleFont.Style = []
+      end
+    end
+  end
+  object grpNavigation: TGroupBox
+    Left = 8
+    Top = 8
+    Width = 201
+    Height = 113
+    Caption = 'Navigation'
+    TabOrder = 1
+    object btnRentalsFirst: TButton
+      Left = 16
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = 'First'
+      TabOrder = 0
+      OnClick = btnRentalsFirstClick
+    end
+    object btnRentalsLast: TButton
+      Left = 16
+      Top = 63
+      Width = 75
+      Height = 25
+      Caption = 'Last'
+      TabOrder = 1
+      OnClick = btnRentalsLastClick
+    end
+    object btnRentalsNext: TButton
+      Left = 97
+      Top = 32
+      Width = 75
+      Height = 25
+      Caption = 'Next'
+      TabOrder = 2
+      OnClick = btnRentalsNextClick
+    end
+    object btnRentalsPrior: TButton
+      Left = 97
+      Top = 63
+      Width = 75
+      Height = 25
+      Caption = 'Prior'
+      TabOrder = 3
+      OnClick = btnRentalsPriorClick
+    end
+  end
+  object rgpSorting: TRadioGroup
+    Left = 8
+    Top = 139
+    Width = 185
+    Height = 105
+    Caption = 'Sorting'
+    Columns = 2
+    Items.Strings = (
+      'Rental_ID'
+      'Vehicle_ID'
+      'Driver_ID'
+      'Start_Km'
+      'Stop_Km'
+      'Start_Date'
+      'Stop_Date')
+    TabOrder = 2
+    OnClick = rgpSortingClick
+  end
+  object redOutput: TRichEdit
+    Left = 219
+    Top = 8
+    Width = 288
+    Height = 113
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 3
+  end
+  object grpOtherSorting: TGroupBox
+    Left = 207
+    Top = 139
+    Width = 185
+    Height = 105
+    Caption = 'Other Sorting'
+    TabOrder = 4
+    object btnDesc: TButton
+      Left = 14
+      Top = 24
+      Width = 147
+      Height = 25
+      Caption = 'Descending Sort'
+      TabOrder = 0
+      OnClick = btnDescClick
+    end
+    object btnDoubleSort: TButton
+      Left = 16
+      Top = 55
+      Width = 145
+      Height = 25
+      Caption = 'Double Sort'
+      TabOrder = 1
+      OnClick = btnDoubleSortClick
+    end
+  end
+  object btnInsert: TButton
+    Left = 207
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'Insert'
+    TabOrder = 5
+    OnClick = btnInsertClick
+  end
+  object btnAppend: TButton
+    Left = 207
+    Top = 295
+    Width = 75
+    Height = 25
+    BiDiMode = bdLeftToRight
+    Caption = 'Append'
+    ParentBiDiMode = False
+    TabOrder = 6
+  end
+  object MainMenu1: TMainMenu
+    Left = 65200
+    Top = 136
+    object File1: TMenuItem
+      Caption = 'File'
+      object RestoreDatabase1: TMenuItem
+        Caption = 'Restore Database'
+        OnClick = RestoreDatabase1Click
+      end
+      object Close1: TMenuItem
+        Caption = 'Close'
+        OnClick = Close1Click
+      end
+    end
+  end
+end

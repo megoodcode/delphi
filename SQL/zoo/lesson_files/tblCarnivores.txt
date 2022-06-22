@@ -1,0 +1,43 @@
+EnclosureNo,FamilyName,ScientificName,GeneralName,NumAdults,NumYoung,EnclosureSize,Endangered
+ZA1,Felidae,Acinonyx jubatus,Cheetah,2,1,50,VU
+ZA2,Felidae,Caracal caracal,Caracal,2,2,36,LE
+ZA5,Felidae,Felis nigripes,Black-footed cat,2,0,36,VU
+ZA9,Felidae,Felis silvestris,Wildcat,3,3,36,LE
+ZB2,Felidae,Leptailurus serval,Serval,3,5,80,LE
+ZB5,Felidae,Panthera pardus,Leopard,3,3,700,LE
+ZB6,Felidae,Panthera leo,Lion,4,2,800,VU
+ZB9,Viverridae,Civettictis civetta,African civet,3,0,50,LE
+ZC2,Viverridae,Genetta tigrina,Cape genet,8,1,50,LE
+ZC3,Viverridae,Genetta genetta,Common genet,6,2,50,LE
+ZC5,Viverridae,Genetta maculata,Rusty-spotted genet,3,2,50,LE
+ZD1,Herpestidae,Atilax paludinosus,Marsh mongoose,2,3,34,LE
+ZD10,Herpestidae,Mungos mungo,Banded mongoose,2,3,40,LE
+ZD2,Herpestidae,Cynictis penicillata,Yellow mongoose,2,6,44,LE
+ZD3,Herpestidae,Galerella pulverulenta,Cape grey mongoose,6,5,34,LE
+ZD4,Herpestidae,Galerella sanguinea ,Slender mongoose,3,1,42,LE
+ZD5,Herpestidae,Helogale parvula,Common dwarf mongoose,4,4,26,LE
+ZD6,Herpestidae,Herpestes ichneumon,Egyptian mongoose,4,0,44,LE
+ZD7,Herpestidae,Ichneumia albicauda,White-tailed mongoose,4,4,44,LE
+ZD8,Herpestidae,Paracynictis selousi,Selous' mongoose,5,5,44,LE
+ZD9,Herpestidae,Rhynchogale melleri,Meller's mongoose,2,1,48,LE
+ZE2,Herpestidae,Suricata suricatta,Meerkat,7,2,48,LE
+ZE3,Hyaenidae,Crocuta crocuta,Spotted hyena,9,6,66,LE
+ZE4,Hyaenidae,Hyaena brunnea,Brown hyena,5,1,66,NE
+ZE5,Hyaenidae,Proteles cristatus,Aardwolf,3,0,66,LE
+ZE6,Canidae,Vulpes chama,Cape fox,7,4,46,LE
+ZE7,Canidae,Canis adustus,Side-striped jackal,6,3,46,LE
+ZE8,Canidae,Canis mesomelas,Black-backed jackal,3,3,52,LE
+ZE9,Canidae,Otocyon megalotis,Bat-eared fox,2,3,52,LE
+ZF1,Canidae,Lycaon pictus,African wild dog,2,1,60,EN
+ZF2,Mustelidae,Ictonyx striatus,Striped polecat,2,2,44,LE
+ZG1,Mustelidae,Poecilogale albinucha,African striped weasel,2,1,44,LE
+ZG10,Phocidae,Lobodon carcinophagus,Crabeater seal,3,2,50,LE
+ZG11,Phocidae,Leptonychotes weddellii,Weddell seal,4,5,50,LE
+ZG2,Mustelidae,Mellivora capensis,Ratel,3,4,50,LE
+ZG3,Mustelidae,Lutra maculicollis,Speckle-throated otter,3,1,58,LE
+ZG4,Mustelidae,Aonyx capensis,African clawless otter,4,1,58,LE
+ZG5,Otariidae,Arctocephalus gazella,Antarctic fur seal,1,3,58,LE
+ZG6,Otariidae,Arctocephalus pusillus,Cape fur seal,4,4,64,LE
+ZG7,Otariidae,Arctocephalus tropicalis,Subantarctic fur seal,3,3,64,LE
+ZG8,Phocidae,Hydrurga leptonyx,Leopard seal,4,3,64,LE
+ZG9,Phocidae,Mirounga leonina,Southern elephant seal,2,2,58,LE

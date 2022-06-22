@@ -1,0 +1,105 @@
+unit dbConnection;
+
+interface
+
+uses
+  Forms, SysUtils,Classes,DB,ADODB,StdCtrls,DBGrids,DBCtrls,Windows;
+
+type
+  TConnection = class(TObject)
+
+  public
+    dbConnection : TADOConnection;
+
+    dsrRentals : TDataSource;
+    tblRentals : TAdoTable;
+    qryRentals : TAdoQuery;
+
+    dsrVehicles : TDataSource;
+    tblVehicles : TAdoTable;
+    qryVehicles : TAdoQuery;
+
+    dsrRates : TDataSource;
+    tblRates : TAdoTable;
+    qryRates : TAdoQuery;
+
+    procedure dbConnect;
+
+    procedure setupRentalsGrid(var grid : TDBGrid);
+    procedure setupVehicleGrid(var grid : TDBGrid);
+    procedure setupRatesGrid(var grid : TDBGrid);
+
+    procedure runSQL(sSQL : string;qQRY : TADOQuery);
+
+  end;
+
+var
+  MyForm : Tform;
+
+implementation
+
+uses
+  Controls, Dialogs;
+
+const
+  DBFileName : String = 'CarRent.mdb';
+
+procedure TConnection.dbConnect;
+begin
+  dbConnection := TADOConnection.Create(MyForm);
+  dbConnection.LoginPrompt := False;
+  dbConnection.ConnectionString :=
+    'Provider=Microsoft.Jet.OLEDB.4.0;' + 'Data Source=' + DBFileName + ';' +
+    'Mode=ReadWrite;' + 'Persist Security Info=False;' +
+    'Jet OLEDB:Database Password=*************';
+  dbConnection.Provider := 'Provider=Microsoft.Jet.OLEDB.4.0;';
+  dbConnection.Open;
+
+  qryRentals := TADOQuery.Create(MyForm);
+  qryRentals.Connection := dbConnection;
+  tblRentals := TADOTable.Create(MyForm);
+  tblRentals.Connection := dbConnection;
+
+  dsrRentals := TDataSource.Create(MyForm);
+  dsrRentals.DataSet := tblRentals;
+
+  qryVehicles := TADOQuery.Create(MyForm);
+  qryVehicles.Connection := dbConnection;
+  dsrVehicles := TDAtaSource.Create(MyForm);
+  dsrVehicles.DataSet := qryVehicles;
+
+  qryRates := TAdoQuery.Create(MyForm);
+  qryRates.Connection := dbConnection;
+  dsrRates := TDataSource.Create(Myform);
+  dsrRates.DataSet := qryRates;
+
+end;
+
+procedure TConnection.runSQL(sSQL: string; qQRY : TADOQuery);
+begin
+  if length(sSQL) <> 0 then
+  begin
+    qQRY.Close;
+    qQRY.SQL.Text := sSQL;
+    qQRY.Open;
+  end
+  else
+    Showmessage('No SQL statement entered');
+end;
+
+procedure TConnection.setupRentalsGrid(var grid: TDBGrid);
+begin
+  grid.DataSource := dsrRentals;
+end;
+
+procedure TConnection.setupVehicleGrid(var grid: TDBGrid);
+begin
+  grid.DataSource := dsrVehicles;
+end;
+
+procedure TConnection.setupRatesGrid(var grid: TDBGrid);
+begin
+  grid.DataSource := dsrRates;
+end;
+
+end.

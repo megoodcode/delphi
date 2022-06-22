@@ -1,0 +1,108 @@
+TownID,TownName,Province,WaterRestrictions,Population,DamID
+1,Willowmore,Eastern Cape,0,7100,6
+2,Queenstown,Eastern Cape,0,55800,14
+3,East London,Eastern Cape,0,423500,18
+4,Kareedouw,Eastern Cape,0,3400,23
+5,Tsomo,Eastern Cape,0,10600,107
+6,Stutterheim,Eastern Cape,0,20800,162
+7,Kirkwood,Eastern Cape,1,10200,29
+8,Indwe,Eastern Cape,1,12300,33
+9,Uitenhage,Eastern Cape,1,198800,52
+10,Hazelmere,Eastern Cape,1,3700,55
+11,Humansdorp,Eastern Cape,1,15600,58
+12,Cradock,Eastern Cape,1,30200,73
+13,Qamata,Eastern Cape,1,6700,88
+14,Umtata,Eastern Cape,1,79000,102
+15,Graaff Reinet,Eastern Cape,1,35400,111
+16,Cofimvaba,Eastern Cape,1,3500,144
+17,Whittlesea,Eastern Cape,1,12100,154
+18,Kroonstad,Free State,0,90800,9
+19,Van Stadensrus,Free State,0,4500,38
+20,Theunissen,Free State,0,21300,42
+21,Phuthaditjhaba,Free State,0,43800,43
+22,Koffiefontein,Free State,0,10200,62
+23,Wepener,Free State,0,9200,71
+24,Bethlehem,Free State,0,59800,133
+25,Ventersburg,Free State,1,10700,3
+26,Harrismith,Free State,1,35200,35
+27,Norvals Pont,Free State,1,3400,47
+28,Koppies,Free State,1,11500,74
+29,Bloemfontein,Free State,1,349000,78
+30,Thaba Nchu,Free State,1,38800,128
+31,Deneysville,Free State,0,12400,147
+32,Johannesburg,Gauteng,0,1975500,41
+33,Tshwane,Gauteng,1,1473800,13
+34,Bronkhorstspruit,Gauteng,1,26700,19
+35,Vanderbijlpark,Gauteng,1,338000,146
+36,Newcastle,KwaZulu-Natal,0,309400,112
+37,Estcourt,KwaZulu-Natal,0,8900,153
+38,Pietermaritzburg,KwaZulu-Natal,1,457700,2
+39,Vryheid,KwaZulu-Natal,1,63600,8
+40,Greytown,KwaZulu-Natal,1,13800,25
+41,Eshowe,KwaZulu-Natal,1,14700,49
+42,Hillcrest,KwaZulu-Natal,1,22500,59
+43,Bergville,KwaZulu-Natal,1,3000,65
+44,Richards Bay,KwaZulu-Natal,1,86800,83
+45,Howick,KwaZulu-Natal,1,18100,95
+46,Cato Ridge,KwaZulu-Natal,1,5700,104
+47,Jozini,KwaZulu-Natal,1,1300,120
+48,Ladysmith,KwaZulu-Natal,1,74500,122
+49,Giyani,Limpopo,0,23200,91
+50,Polokwane,Limpopo,1,104000,1
+51,Thohoyandou,Limpopo,1,43900,27
+52,Mokopane,Limpopo,1,5600,32
+53,Tzaneen,Limpopo,1,16900,37
+54,Marble Hall,Limpopo,1,9600,44
+55,Musina,Limpopo,1,53900,89
+56,Lephalale,Limpopo,1,13500,98
+57,Middelburg,Mpumalanga,0,123700,15
+58,Hazyview,Mpumalanga,0,19600,60
+59,Groblersdal,Mpumalanga,0,3900,87
+60,White River,Mpumalanga,1,15600,26
+61,Malelane,Mpumalanga,1,5600,36
+62,Standerton,Mpumalanga,1,65400,53
+63,Nelspruit,Mpumalanga,1,112400,57
+64,Amsterdam,Mpumalanga,1,9520,61
+65,Witbank,Mpumalanga,1,198500,76
+66,Lydenburg,Mpumalanga,1,21200,80
+67,Carolina,Mpumalanga,1,4500,110
+68,Trichardt,Mpumalanga,1,21300,143
+69,Sabie,Mpumalanga,1,4500,159
+70,Wakkerstroom,Mpumalanga,1,7100,164
+71,Potchefstroom,North West,0,122100,16
+72,Rustenburg,North West,0,123000,17
+73,Mmabatho,North West,0,50900,31
+74,Ventersdorp,North West,0,15600,66
+75,Madikwe,North West,0,10900,90
+76,Zeerust,North West,0,17600,99
+77,Lobathleng,North West,0,25700,109
+78,Taung,North West,0,11000,141
+79,Bloemhof,North West,1,17000,10
+80,Brits,North West,1,58900,54
+81,Swartruggens,North West,1,3400,86
+82,Groot Marico,North West,1,4200,92
+83,Warrenton,North West,1,17900,148
+84,Britstown,Northern Cape,0,58900,132
+85,Prieska,Northern Cape,1,11200,12
+86,Douglas,Northern Cape,1,11200,34
+87,Vanwyksvlei,Northern Cape,1,12200,150
+88,Clanwilliam,Western Cape,0,8100,24
+89,Grabouw,Western Cape,0,19800,39
+90,Beaufort West,Western Cape,0,34500,85
+91,Cape Town,Western Cape,0,2984100,100
+92,Montagu,Western Cape,0,12300,119
+93,Stellenbosch,Western Cape,1,73700,4
+94,Franschhoek,Western Cape,1,4200,7
+95,Swellendam,Western Cape,1,14100,20
+96,Ceres,Western Cape,1,28000,22
+97,Villiersdorp,Western Cape,1,11300,40
+98,Laingsburg,Western Cape,1,2800,45
+99,Prince Albert,Western Cape,1,1100,46
+100,Worcester,Western Cape,1,95000,51
+101,De Rust,Western Cape,1,3400,63
+102,McGregor,Western Cape,1,34000,67
+103,Porterville,Western Cape,1,17700,96
+104,Somerset West,Western Cape,1,139000,136
+105,Gordons Bay,Western Cape,1,14200,137
+106,Gouda,Western Cape,1,15400,152
+107,Mossel Bay,Western Cape,1,76000,160

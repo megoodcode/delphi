@@ -1,0 +1,19 @@
+Cheetah;3#80.2;L#
+Ratel;7#50;S#
+XXX;0#20;X#
+Serval;5#80.75;M#
+XXX;0#36;X#
+Caracal;4#200;L#
+Black-footed Cat;4#30;S#
+Wildcat;6#50;S#
+African Striped Weasel;3#40;S#
+Crabeater Seal;5#60;M#
+XXX;0#15;X#
+Speckle-throated Otter;4#58;M#
+African Clawless Otter;5#70;M#
+Meerkat;5#48;S#
+XXX;0#50;X#
+Subantarctic Fur Seal;6#84;M#
+XXX;0#200;X#
+Leopard;7#140;L#
+Elephant;5#200;L#

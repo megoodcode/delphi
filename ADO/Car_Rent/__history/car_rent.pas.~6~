@@ -1,0 +1,250 @@
+unit car_rent;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,dbConnection, Grids, DBGrids, ComCtrls, StdCtrls, DB, ADODB, ExtCtrls,
+  Buttons, Menus;
+
+type
+  TfrmCarRent = class(TForm)
+    dbgRentals: TDBGrid;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    dbgVehicles: TDBGrid;
+    dbgRates: TDBGrid;
+    grpNavigation: TGroupBox;
+    btnRentalsFirst: TButton;
+    btnRentalsLast: TButton;
+    btnRentalsNext: TButton;
+    btnRentalsPrior: TButton;
+    MainMenu1: TMainMenu;
+    File1: TMenuItem;
+    RestoreDatabase1: TMenuItem;
+    Close1: TMenuItem;
+    rgpSorting: TRadioGroup;
+    redOutput: TRichEdit;
+    grpOtherSorting: TGroupBox;
+    btnDesc: TButton;
+    btnDoubleSort: TButton;
+    btnInsert: TButton;
+    btnAppend: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure connect;
+    procedure restoreDatabase;
+    procedure btnRentalsFirstClick(Sender: TObject);
+    procedure btnRentalsLastClick(Sender: TObject);
+    procedure btnRentalsNextClick(Sender: TObject);
+    procedure btnRentalsPriorClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure rgpSortingClick(Sender: TObject);
+    procedure RestoreDatabase1Click(Sender: TObject);
+    procedure Close1Click(Sender: TObject);
+    procedure btnDescClick(Sender: TObject);
+    procedure btnDoubleSortClick(Sender: TObject);
+    procedure btnInsertClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCarRent: TfrmCarRent;
+
+  // DB SQL component
+  sSQL : string;
+
+  // Database will automaticall connect
+  // These are the two tables that you work with
+  tblRentals : TADOTable;
+  tblVehicles : TADOTable;
+  tblRates : TADOTable;
+
+implementation
+
+{$R *.dfm}
+
+//==============================================================================
+//  Database Code Constructs
+//==============================================================================
+
+procedure TfrmCarRent.btnDescClick(Sender: TObject);
+var sCol : string;
+begin
+     if rgpSorting.ItemIndex >= 0 then
+      sCol := rgpSorting.Items[rgpSorting.ItemIndex]
+     else
+      sCol := 'Rental_ID';
+
+     tblRentals.Sort := sCol + ' DESC';
+     redOutput.Clear;
+     redOutput.Lines.Add('Sorted ' + sCol + ' in descending' );
+end;
+
+procedure TfrmCarRent.btnDoubleSortClick(Sender: TObject);
+begin
+    tblRentals.Sort := 'Rental_ID ASC,Vehicle_ID DESC';
+    redOutput.Clear;
+    redOutput.Lines.Add('tblRentals.Sort := ''''Rental_ID ASC,Vehicle_ID DESC''''');
+    redOutput.Lines.Add(#13#10+'Notice here that Vehicle_ID was not sorted in DESC. D');
+end;
+
+procedure TfrmCarRent.btnInsertClick(Sender: TObject);
+begin
+  tblRates.Insert;
+  tblRates['Rates_ID'] := tblRates.RecordCount + 1;
+  tblRates['Vehicle_category'] := 'Sports';
+  tblRates['CostPerkm'] := 12;
+  tblRates['CostPerDay'] := 200;
+  tblRates.Post;
+end;
+
+procedure TfrmCarRent.btnRentalsFirstClick(Sender: TObject);
+begin
+  tblRentals.First;
+end;
+
+procedure TfrmCarRent.btnRentalsLastClick(Sender: TObject);
+begin
+  tblRentals.Last;
+end;
+
+procedure TfrmCarRent.btnRentalsNextClick(Sender: TObject);
+begin
+  tblRentals.Next;
+end;
+
+procedure TfrmCarRent.btnRentalsPriorClick(Sender: TObject);
+begin
+  tblRentals.Prior;
+end;
+
+
+
+procedure TfrmCarRent.rgpSortingClick(Sender: TObject);
+begin
+ { TODO : Lesson 3 : Sort by ASC, Or DESC, Also Double Sorting }
+  case rgpSorting.ItemIndex of
+  0 : tblRentals.Sort := 'Rental_ID';
+  1 : begin
+      tblRentals.Sort := 'Vehicle_ID';
+      tblVehicles.Sort := 'Vehicle_ID';
+      end;
+  2 : tblRentals.Sort := 'Driver_ID';
+  3 : tblRentals.Sort := 'Start_Km';
+  4 : tblRentals.Sort := 'Stop_Km';
+  5 : tblRentals.Sort := 'Start_Date';
+  6 : tblRentals.Sort := 'Stop_Date';
+  end;
+
+  redOutput.Lines.Clear;
+  redOutput.Lines.Add('Example Sort Query');
+  redOutput.Lines.Add('tblRentals.Sort := ''''Rental_ID''''');
+
+end;
+
+//==============================================================================
+// Supplied Connection Code - DO NOT CHANGE.
+// Database will automatically connect when run
+//==============================================================================
+
+{$region Connect}
+
+var
+  dbConn : TConnection;
+  qryCarRent : TADOQuery;
+
+  dsrRentals : TDataSource;
+  dsrVehicles : TDataSource;
+  dsrRates : TDataSource;
+
+procedure TfrmCarRent.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  restoreDatabase;
+end;
+
+procedure TfrmCarRent.FormShow(Sender: TObject);
+begin
+  dbConn := TConnection.Create;
+  dbConn.dbConnect;
+  connect;
+  pagecontrol1.ActivePageIndex := 0;
+end;
+
+procedure TfrmCarRent.connect;
+begin
+  tblRentals := TADotable.Create(frmCarRent);
+  tblRentals.Connection := dbConn.dbConnection;
+  tblRentals.TableName := 'tblRentals';
+  tblRentals.Open;
+
+  dsrRentals := TDataSource.Create(frmCarRent);
+  dsrRentals.DataSet := tblRentals;
+  dbgRentals.DataSource := dsrRentals;
+
+  tblVehicles :=  TAdoTable.Create(frmCarRent);
+  tblVehicles.Connection := dbConn.dbConnection;
+  tblVehicles.TableName := 'tblVehicles';
+  tblVehicles.Open;
+
+  dsrVehicles := TDataSource.Create(frmCarRent);
+  dsrVehicles.DataSet := tblVehicles;
+  dbgVehicles.DataSource := dsrVehicles;
+
+  tblRates := TAdoTable.Create(frmCarRent);
+  tblRates.Connection := dbConn.dbConnection;
+  tblRates.TableName := 'tblRates';
+  tblRates.Open;
+
+  dsrRates := TDataSource.Create(frmCarRent);
+  dsrRates.DataSet := tblRates;
+  dbgRates.DataSource := dsrRates;
+end;
+
+procedure TfrmCarRent.restoreDatabase;
+var
+  bFail: boolean;
+begin
+  try
+    dbConn.dbConnection.Close;
+
+    tblRentals.Destroy;
+    tblVehicles.Destroy;
+    tblRates.Destroy;
+
+    DeleteFile('CarRent.mdb');
+    CopyFile('CarRentBackup.mdb','CarRent.mdb',bFail);
+
+    dbConn.dbConnect;
+    connect;
+  except
+    on E : Exception do
+      ShowMessage(E.ClassName+' error raised, with message : '+E.Message);
+end;
+end;
+
+procedure TfrmCarRent.RestoreDatabase1Click(Sender: TObject);
+begin
+  try
+    restoreDatabase;
+  except
+    on E : Exception do
+    begin
+    ShowMessage(E.ClassName+' error raised, with message : '+E.Message);
+    Exit;
+    end;
+  end;
+  MessageDlg('Database Restored Successfully',mtInformation,[mbOk],0);
+end;
+
+procedure TfrmCarRent.Close1Click(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+{$endregion}
+
+end.

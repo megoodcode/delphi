@@ -1,0 +1,155 @@
+unit car_rent;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs,dbConnection, Grids, DBGrids, ComCtrls, StdCtrls, DB, ADODB;
+
+type
+  TfrmCarRent = class(TForm)
+    dbgRentals: TDBGrid;
+    PageControl1: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    dbgVehicles: TDBGrid;
+    TabSheet3: TTabSheet;
+    dbgRates: TDBGrid;
+    GroupBox1: TGroupBox;
+    btnRentalsFirst: TButton;
+    btnRentalsLast: TButton;
+    btnRentalsNext: TButton;
+    btnRentalsPrior: TButton;
+    btnRestoreDatabase: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure connect;
+    procedure restoreDatabase;
+    procedure btnRentalsFirstClick(Sender: TObject);
+    procedure btnRentalsLastClick(Sender: TObject);
+    procedure btnRentalsNextClick(Sender: TObject);
+    procedure btnRentalsPriorClick(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure btnRestoreDatabaseClick(Sender: TObject);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCarRent: TfrmCarRent;
+
+  // DB SQL component
+  sSQL : string;
+
+  // Database will automaticall connect
+  // These are the two tables that you work with
+  tblRentals : TADOTable;
+  tblVehicles : TADOTable;
+  tblRates : TADOTable;
+
+implementation
+
+{$R *.dfm}
+
+//==============================================================================
+//  Database Code Constructs
+//==============================================================================
+
+procedure TfrmCarRent.btnRentalsFirstClick(Sender: TObject);
+begin
+  tblRentals.First;
+end;
+
+procedure TfrmCarRent.btnRentalsLastClick(Sender: TObject);
+begin
+  tblRentals.Last;
+end;
+
+procedure TfrmCarRent.btnRentalsNextClick(Sender: TObject);
+begin
+  tblRentals.Next;
+end;
+
+procedure TfrmCarRent.btnRentalsPriorClick(Sender: TObject);
+begin
+  tblRentals.Prior;
+end;
+
+
+{$region Connect}
+//==============================================================================
+// Supplied Connection Code - DO NOT CHANGE.
+// Database will automatically connect when run
+//==============================================================================
+
+var
+  dbConn : TConnection;
+  qryCarRent : TADOQuery;
+
+  dsrRentals : TDataSource;
+  dsrVehicles : TDataSource;
+  dsrRates : TDataSource;
+
+procedure TfrmCarRent.FormClose(Sender: TObject; var Action: TCloseAction);
+begin
+  restoreDatabase;
+end;
+
+procedure TfrmCarRent.FormShow(Sender: TObject);
+begin
+  dbConn := TConnection.Create;
+  dbConn.dbConnect;
+  connect;
+  pagecontrol1.ActivePageIndex := 0;
+end;
+
+procedure TfrmCarRent.connect;
+begin
+  tblRentals := TADotable.Create(frmCarRent);
+  tblRentals.Connection := dbConn.dbConnection;
+  tblRentals.TableName := 'tblRentals';
+  tblRentals.Open;
+
+  dsrRentals := TDataSource.Create(frmCarRent);
+  dsrRentals.DataSet := tblRentals;
+  dbgRentals.DataSource := dsrRentals;
+end;
+
+procedure TfrmCarRent.restoreDatabase;
+var
+  bFail: boolean;
+begin
+  try
+    dbConn.dbConnection.Close;
+
+    tblRentals.Destroy;
+    //tblVehicles.Destroy;
+    //tblRates.Destroy;
+
+    DeleteFile('CarRent.mdb');
+    CopyFile('CarRentBackup.mdb','CarRent.mdb',bFail);
+
+    dbConn.dbConnect;
+    connect;
+  except
+    on E : Exception do
+      ShowMessage(E.ClassName+' error raised, with message : '+E.Message);
+end;
+end;
+
+procedure TfrmCarRent.btnRestoreDatabaseClick(Sender: TObject);
+begin
+  try
+    restoreDatabase;
+    MessageDlg('Database Restored Successfully',mtInformation,[mbOk],0);
+  except
+    on E : Exception do
+      ShowMessage(E.ClassName+' error raised, with message : '+E.Message);
+  end;
+end;
+
+{$endregion}
+
+end.

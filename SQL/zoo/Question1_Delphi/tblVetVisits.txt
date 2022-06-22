@@ -1,0 +1,46 @@
+VisitID,VisitDate,EnclosureNo,ReasonForVisit,FollowUp,Animal_ID
+1,2012/9/20 00:00:00,ZA1,Skin problem,1,ZA1_9
+2,2012/9/20 00:00:00,ZC2,Routine check-up,0,ZC2_3
+3,2012/9/20 00:00:00,ZC3,Injured eye,1,ZC3_8
+4,2012/9/20 00:00:00,ZD4,Routine check-up,0,ZD4_2
+5,2012/9/20 00:00:00,ZA5,Routine check-up,0,ZA5_2
+6,2012/9/20 00:00:00,ZB6,Routine check-up,0,ZB6_6
+7,2012/9/20 00:00:00,ZA9,Ear infection,1,ZA9_2
+8,2012/9/20 00:00:00,ZB5,Routine check-up,0,ZB5_3
+9,2012/9/20 00:00:00,ZB2,Fever,1,ZB2_8
+10,2012/9/20 00:00:00,ZD10,Skin problem,1,ZD10_9
+11,2012/9/20 00:00:00,ZD7,Bleeding lip,1,ZD7_3
+12,2012/9/20 00:00:00,ZD9,Routine check-up,0,ZD9_2
+13,2012/9/20 00:00:00,ZD5,Routine check-up,0,ZD5_7
+14,2012/9/21 00:00:00,ZD4,Injured leg,1,ZD4_4
+15,2012/9/21 00:00:00,ZD3,Skin problem,1,ZD3_2
+16,2012/9/21 00:00:00,ZD6,Routine check-up,0,ZD6_7
+17,2012/9/21 00:00:00,ZE2,Routine check-up,0,ZE2_5
+18,2012/9/21 00:00:00,ZA2,Routine check-up,0,ZA2_4
+19,2012/9/21 00:00:00,ZE3,Routine check-up,0,ZE3_3
+20,2012/9/21 00:00:00,ZA9,Ear infection,1,ZA9_2
+21,2012/9/21 00:00:00,ZC5,Assisted with birth,1,ZC5_4
+22,2012/9/23 00:00:00,ZF1,Assisted with birth,1,ZF1_5
+23,2012/9/23 00:00:00,ZD3,Skin problem,0,ZD3_2
+24,2012/9/23 00:00:00,ZD8,Routine check-up,0,ZD8_1
+25,2012/9/23 00:00:00,ZE6,Routine check-up,0,ZE6_5
+26,2012/9/23 00:00:00,ZE4,Routine check-up,0,ZE4_5
+27,2012/9/23 00:00:00,ZF2,Routine check-up,0,ZF2_2
+28,2012/9/23 00:00:00,ZE5,Routine check-up,0,ZE5_1
+29,2012/9/23 00:00:00,ZC5,Assisted with birth,1,ZC5_4
+30,2012/9/23 00:00:00,ZD4,Injured leg,1,ZD4_4
+31,2012/9/23 00:00:00,ZA9,Ear infection,0,ZA9_2
+32,2012/9/23 00:00:00,ZD7,Bleeding lip,0,ZD7_3
+33,2012/9/23 00:00:00,ZG1,Routine check-up,0,ZG1_3
+34,2012/9/23 00:00:00,ZG10,Ear infection,1,ZG10_3
+35,2012/9/23 00:00:00,ZC2,Assisted with birth,1,ZC2_5
+36,2012/9/23 00:00:00,ZG3,Routine check-up,0,ZG3_3
+37,2012/9/22 00:00:00,ZF1,Routine check-up,1,ZF1_5
+38,2012/9/23 00:00:00,ZG7,Routine check-up,0,ZG7_1
+39,2012/9/23 00:00:00,ZD1,Neck injury,1,ZD1_7
+40,2012/9/23 00:00:00,ZG4,Malnutrition,1,ZG4_10
+41,2012/9/23 00:00:00,ZB2,Fever,0,ZB2_8
+42,2012/9/23 00:00:00,ZG8,Routine check-up,0,ZG8_8
+43,2012/9/24 00:00:00,ZA1,Skin problem,0,ZA1_9
+44,2012/9/24 00:00:00,ZF1,Checked on newborn,1,ZF1_5
+45,2012/9/24 00:00:00,ZG2,Ear infection,0,ZG2_1

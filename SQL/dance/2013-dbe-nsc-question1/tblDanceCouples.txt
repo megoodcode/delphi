@@ -1,0 +1,15 @@
+DanceCoupleID,DancePartner1,DancePartner2,ProfessionalDancers,PreviousDancePartners
+1,Holly,Artem,B,1
+2,Dan,Katya,O,1
+3,Lulu,Brendan,N,1
+4,Audley,Natalie,O,0
+5,Robbie,Ola,B,1
+6,Anita,Robin,B,1
+7,Russell,Flavia,N,0
+8,Harry,Aliona,N,0
+9,Rory,Erin,N,1
+10,Alex,James,O,1
+11,Chelsee,Pasha,B,0
+12,Edwina,Vincent,O,0
+13,Nancy,Anton,B,0
+14,Jason,Kristina,N,0
