@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2018/07/30 13:39:15.000.137,=C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/07/31 12:39:32.000.111,=C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/08/09 00:32:05.000.943,=C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2018/08/09 03:20:20.000.942,C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Nirvana\Desktop\20170809\Jiv\Random\Unit1.pas</Transaction>
+    <Transaction>2018/08/09 03:20:20.000.942,C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Nirvana\Desktop\20170809\Jiv\Random\Unit1.dfm</Transaction>
+    <Transaction>2018/08/09 03:20:24.000.502,C:\Users\Nirvana\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Nirvana\Desktop\20170809\Jiv\Random\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

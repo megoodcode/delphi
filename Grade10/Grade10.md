@@ -30,3 +30,6 @@ There is an existing file called "output.txt" in the program directory that is w
 
 ## ID Program
 User inserts a ID number. Program will decode id to detmerine: month/day/year of birth. If person is a south africa citizen, and what gender they are. More info : https://www.westerncape.gov.za/general-publication/decoding-your-south-african-id-number-0
+
+# Interest
+A program showing how to calculate interest over a 4 year period on a fixed amount.
